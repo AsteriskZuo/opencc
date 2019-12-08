@@ -37,7 +37,7 @@ std::string BundleToolsCpp::getResourceDirectory()
         if (std::string::npos != pos) {
             resdir = resdir.substr(7);
         }
-        std::string subdir = u8"opencc.framework/opencc_data.bundle/Contents/Resources/";
+        std::string subdir = u8"opencc_data.bundle/Contents/Resources/";
         resdir.append(subdir);
     }
     return resdir;
